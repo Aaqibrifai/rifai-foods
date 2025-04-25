@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reviews - RIFAI FOODS</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="review.css">
+</head>
+<body>
+
+    <header>
+        <h1>RIFAI FOODS - Customer Reviews</h1>
+        <nav>
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="menu.html" class="nav-link">Menu</a>
+            <a href="contact.html" class="nav-link">Contact</a>
+            <a href="review.html" class="nav-link">Reviews</a>
+            
+        </nav>
+    </header>
+
+    <section class="review-container">
+        <h2>Share Your Experience</h2>
+        <div class="review-form">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <textarea id="reviewText" placeholder="Write your review..." required></textarea>
+            <div class="stars">
+                <span class="star" onclick="rateStar(1)">★</span>
+                <span class="star" onclick="rateStar(2)">★</span>
+                <span class="star" onclick="rateStar(3)">★</span>
+                <span class="star" onclick="rateStar(4)">★</span>
+                <span class="star" onclick="rateStar(5)">★</span>
+            </div>
+            <button class="btn" onclick="submitReview()">Submit Review</button>
+        </div>
+
+        <h2>Customer Reviews</h2>
+         <!-- Customer Reviews Preview -->
+    <section class="reviews-preview">
+        <h2>What Our Customers Say</h2>
+        <div id="reviewsContainer">
+            <div id="reviewsList">
+                <div class="review">
+                    <h4>Shifa ul Kareem</h4>
+                    <p>"Best biryani ever! Highly recommended!"</p>
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                </div>
+                <div class="review">
+                    <h4>Soofi Hussain</h4>
+                    <p>"Great taste and fast delivery!"</p>
+                    <div class="stars">⭐⭐⭐⭐</div>
+                </div>
+                <div class="review">
+                    <h4>Sathak Ibrahim</h4>
+                    <p>"Fantastic service and delicious food!"</p>
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                </div>
+            </div>
+        </div>
+        
+        <a href="review.html" class="btn">See All Reviews</a>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="why-choose-us">
+        <h2>Why Choose RIFAI FOODS?</h2>
+        <div class="features">
+            <div class="feature">
+                <img src="images/fresh.png" alt="Fresh Ingredients">
+                <h3>Fresh Ingredients</h3>
+                <p>Only the best quality ingredients used!</p>
+            </div>
+            <div class="feature">
+                <img src="images/fast.png" alt="Fast Delivery">
+                <h3>Fast Delivery</h3>
+                <p>Your order reaches you in no time!</p>
+            </div>
+            <div class="feature">
+                <img src="images/taste.png" alt="Authentic Taste">
+                <h3>Authentic Taste</h3>
+                <p>Traditional recipes with a modern twist!</p>
+            </div>
+        </div>
+    </section>
+        <div id="reviewsList">
+            <!-- Reviews will be added dynamically here -->
+        </div>
+    </section>
+
+    <script src="review.js"></script>
+
+</body>
+</html>

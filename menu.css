@@ -1,0 +1,147 @@
+/* Background and Font */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: url('https://images.unsplash.com/photo-1600891964599-f61ba0e24092') no-repeat center center fixed;
+    background-size: solid;
+    color: white;
+    overflow-x: hidden;
+  }
+  
+  /* Header */
+  header {
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+    color: white;
+    text-align: center;
+    padding: 2rem 1rem;
+    animation: fadeInDown 1s ease-out;
+  }
+  
+  header h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  header p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+  
+  /* Navbar */
+  nav {
+    margin-top: 10px;
+  }
+  
+  .nav-link {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease;
+  }
+  
+  .nav-link:hover {
+      color: #000;
+  }
+  
+  /* Marquee Timing */
+  .timing marquee {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 10px 0;
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #f0e68c;
+  }
+  
+  /* Section Titles */
+  .section-title {
+    text-align: center;
+    margin: 40px 0 20px;
+    font-size: 2rem;
+    color: #fff8dc;
+    text-shadow: 2px 2px 4px #000;
+  }
+  
+  /* Dish Grid */
+  .dish-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    padding: 0 30px 50px;
+  }
+  
+  /* Dish Box */
+  .dish-box {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+    transition: transform 0.3s ease;
+    backdrop-filter: blur(6px);
+    text-align: center;
+  }
+  
+  .dish-box:hover {
+    transform: translateY(-8px);
+  }
+  
+  .dish-box img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .dish-box h3 {
+    margin: 15px 0 10px;
+    font-size: 1.4rem;
+    color: #fff;
+  }
+  
+  /* Order Button */
+  .dish-box a {
+    display: inline-block;
+    margin-bottom: 15px;
+    padding: 8px 20px;
+    background-color: #32cd32;
+    color: white;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: background 0.3s;
+  }
+  
+  .dish-box a:hover {
+    background-color: #228b22;
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  @keyframes fadeInDown {
+    from { opacity: 0; transform: translateY(-30px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  @keyframes slideIn {
+    from { opacity: 0; transform: translateX(-100px); }
+    to { opacity: 1; transform: translateX(0); }
+  }
+  
+  @keyframes zoomIn {
+    from { opacity: 0; transform: scale(0.8); }
+    to { opacity: 1; transform: scale(1); }
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .hero h2 {
+        font-size: 2rem;
+    }
+  
+    .highlight-box {
+        width: 90%;
+    }
+  }
+  
